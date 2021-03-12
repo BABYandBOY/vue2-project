@@ -3,13 +3,10 @@
     <div class="block-content">
       <img class="logo" :src="require('@/assets/img/home/荷湖LOGO1 拷贝 2.png')">
       <div class="menu">
-        <el-menu mode="horizontal">
-          <el-menu-item index="1">首页</el-menu-item>
-          <el-menu-item index="2">产品中心</el-menu-item>
-          <el-menu-item index="4">服务中心</el-menu-item>
-          <el-menu-item index="5">技术平台</el-menu-item>
-          <el-menu-item index="6">关于我们</el-menu-item>
-          <el-menu-item index="7">招纳贤士</el-menu-item>
+        <el-menu mode="horizontal" router :default-active="$route.path">
+          <el-menu-item v-for="(item, i) in navList" :key="i" :index="item.name">
+            {{ item.label }}
+          </el-menu-item>
         </el-menu>
       </div>
     </div>
@@ -18,6 +15,18 @@
 
 <script>
 export default {
+  data() {
+    return {
+      navList: [
+        { name: '/home', label: '首页' },
+        { name: '/product', label: '产品中心' },
+        { name: '/service', label: '服务中心' },
+        { name: '/platform', label: '技术平台' },
+        { name: '/about', label: '关于我们' },
+        { name: '/invite', label: '招纳贤士' },
+      ]
+    }
+  }
 }
 </script>
 

@@ -57,8 +57,17 @@ body {
 .H {
   font-family: AlibabaH;
 }
+.f72 {
+  font-size: 72px;
+}
 .f48 {
   font-size: 48px;
+}
+.f40 {
+  font-size: 40px;
+}
+.f36 {
+  font-size: 36px;
 }
 .f30 {
   font-size: 30px;
@@ -80,4 +89,7 @@ body {
 }
 .width100 {
   width: 100%;
+}
+.block {
+  background: #F2F2F2;
 }

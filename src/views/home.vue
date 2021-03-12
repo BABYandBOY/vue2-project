@@ -47,7 +47,7 @@
               超宽视场3D介观成像系统
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/大组织透明....png')">
+              <img :src="require('@/assets/img/home/超宽视场... 拷贝.png')">
             </div>
             <div class="item-bottom">
               <div class="f18 R item-bottom-content">
@@ -57,7 +57,7 @@
           </el-col>
         </el-row>
         <div class="learn-more f18">
-          了解更多>>
+          <span class="learn-more-hover">了解更多>></span>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
               高通量标准化类器官构建服务
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/产品SLiM1000.png')">
+              <img :src="require('@/assets/img/home/高通量.png')">
             </div>
             <div class="item-bottom item-bottom-bg">
               <div class="f18 R cWhite item-bottom-content">
@@ -90,7 +90,7 @@
               组织透明化成像与分析服务
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/大组织透明....png')">
+              <img :src="require('@/assets/img/home/组织透明化.png')">
             </div>
             <div class="item-bottom">
               <div class="f18 R item-bottom-content">
@@ -103,7 +103,7 @@
               高内涵细胞成像与分析服务
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/大组织透明....png')">
+              <img :src="require('@/assets/img/home/高内涵.png')">
             </div>
             <div class="item-bottom">
               <div class="f18 R item-bottom-content">
@@ -113,7 +113,7 @@
           </el-col>
         </el-row>
         <div class="learn-more f18">
-          了解更多>>
+          <span class="learn-more-hover">了解更多>></span>
         </div>
       </div>
     </div>
@@ -121,26 +121,30 @@
     <div class="block">
       <div class="block-content">
         <div class="title f48 M">
-          <i class="el-icon-help" />
+          <div class="icon-img">
+            <img :src="require('@/assets/img/home/Icon--技术平台.png')">
+          </div>
           技术平台
           <span class="f28 L">PLATFORM</span>
         </div>
         <el-row :gutter="20">
-          <el-col :span="12" class="item">
+          <el-col :span="12">
             <div class="f30 M">由数据驱动的药物发现与个性化治疗平台</div>
-            <div class="f18 R" style="padding-top: 140px;">
+            <div class="f18 R platform-content">
               <p>以标准化、自动化、智能化、规模化的工业级标准，</p>
               <p>打造全球最优质的、自主知识产权的新型生物计算机基础设施，</p>
               <p>集微留控类器官培养、生物文库构建、自动化操作、3D高内涵成像、大数据处理、机器学习与预测、多参数检测分析于一体，</p>
               <p>推动高通量、自动化药物筛选与功效评价，赋能生命科学、药物研发与精准治疗。</p>
             </div>
           </el-col>
-          <el-col :span="12" class="item">
-            s
+          <el-col :span="12">
+            <div class="item-middle-2">
+              <img :src="require('@/assets/img/home/技术平台插图.png')">
+            </div>
           </el-col>
         </el-row>
         <div class="learn-more f18">
-          了解更多>>
+          <span class="learn-more-hover">了解更多>></span>
         </div>
       </div>
     </div>
@@ -148,7 +152,9 @@
     <div>
       <div class="block-content">
         <div class="title f48 M">
-          <i class="el-icon-help" />
+          <div class="icon-img">
+            <img :src="require('@/assets/img/home/Icon--关于我们.png')">
+          </div>
           关于我们
           <span class="f28 L">ABOUT</span>
         </div>
@@ -161,66 +167,15 @@
           </div>
         </el-row>
         <div class="learn-more f18">
-          了解更多>>
+          <span class="learn-more-hover">了解更多>></span>
         </div>
       </div>
-    </div>
-
-    <div class="footer">
-      <div class="block-content">
-        <el-row class="footer-content cWhite">
-          <el-col :span="4">
-            <div class="f16 M">产品中心</div>
-            <div class="f16 R" style="padding-top: 20px;">
-              <p>SLiM1000</p>
-            </div>
-          </el-col>
-          <el-col :span="4">
-            <div class="f16 M">服务中心</div>
-            <div class="f16 R" style="padding-top: 20px;">
-              <p>高通量标准化类器官构建服务</p>
-              <p>组织透明化成像与分析服务</p>
-              <p>高内涵细胞成像与分析服务</p>
-              <p>超宽场全脑实时成像与分析服务</p>
-            </div>
-          </el-col>
-          <el-col :span="4">
-            <div class="f16 M">技术平台</div>
-            <div class="f16 R" style="padding-top: 20px;">
-              <p>生物计算基础设施</p>
-            </div>
-          </el-col>
-          <el-col :span="4">
-            <div class="f16 M">关于我们</div>
-            <div class="f16 R" style="padding-top: 20px;">
-              <p>公司简介</p>
-              <p>公司文化</p>
-              <p>联系我们</p>
-            </div>
-          </el-col>
-          <el-col :span="4">
-            <div class="f16 M">招贤纳士</div>
-            <div class="f16 R" style="padding-top: 20px;">
-              <p>开放职位</p>
-            </div>
-          </el-col>
-          <el-col :span="4">
-            <img src="@/assets/logo.png">
-          </el-col>
-        </el-row>
-      </div>
-    </div>
-
-    <div class="footer copyright f16 R cWhite">
-      Copyright © 2020-2021 浙江荷湖科技有限公司  浙ICP备2021003591号  法律声明
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-  },
   data() {
     return {
       BannerList: [
@@ -235,18 +190,6 @@ export default {
 </script>
 
 <style scoped>
-
-.block {
-  background: #F2F2F2;
-}
-.footer {
-  background: #29292C;
-}
-.copyright {
-  border-top: 1px solid #AAA;
-  padding: 45px 0;
-  text-align: center;
-}
 .title {
   padding: 60px 0;
 }
@@ -257,11 +200,22 @@ export default {
 }
 .item {
   height: 480px;
+  cursor: pointer;
+}
+.item:hover>.item-top {
+  background: #d4d1e2;
+}
+.item:hover>.item-bottom {
+  background: #8e83bb;
+}
+.item:hover>>>.item-bottom-content {
+  color: #FFF;
 }
 .item-top {
   height: 70px;
   line-height: 70px;
   text-align: center;
+  transition: all .3s;
 }
 .item-top-bg {
   background: #d4d1e2;
@@ -273,8 +227,16 @@ export default {
   display: table-cell;
   width: 480px;
 }
+.item-middle-2 {
+  height: 520px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  width: 720px;
+}
 .item-bottom {
   height: 100px;
+  transition: all .3s;
 }
 .item-bottom-bg {
   background: #8e83bb;
@@ -286,12 +248,18 @@ export default {
   padding: 40px 0;
   text-align: center;
 }
-.footer-content {
-  padding-top: 60px;
-  padding-bottom: 100px;
+.learn-more-hover {
+  transition: all .3s;
+}
+.learn-more-hover:hover {
+  color: #f95671;
+  cursor: pointer;
 }
 .Banner {
   width: 100%;
   height: 100%;
+}
+.platform-content {
+  padding: 140px 0;
 }
 </style>
