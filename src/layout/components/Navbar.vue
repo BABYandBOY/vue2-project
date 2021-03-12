@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="block-content">
-      <img class="logo" :src="require('@/assets/img/home/荷湖LOGO1 拷贝 2.png')">
+      <img class="logo" :src="require('@/assets/img/home/荷湖LOGO.png')">
       <div class="menu">
         <el-menu mode="horizontal" router :default-active="$route.path">
           <el-menu-item v-for="(item, i) in navList" :key="i" :index="item.name">

@@ -34,7 +34,7 @@
               大组织透明化成像系统
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/大组织透明....png')">
+              <img :src="require('@/assets/img/home/大组织透明.png')">
             </div>
             <div class="item-bottom">
               <div class="f18 R item-bottom-content">
@@ -47,7 +47,7 @@
               超宽视场3D介观成像系统
             </div>
             <div class="item-middle">
-              <img :src="require('@/assets/img/home/超宽视场... 拷贝.png')">
+              <img :src="require('@/assets/img/home/超宽视场.png')">
             </div>
             <div class="item-bottom">
               <div class="f18 R item-bottom-content">
