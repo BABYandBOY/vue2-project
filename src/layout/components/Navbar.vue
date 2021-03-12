@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="block-content">
-      <img class="logo" src="@/assets/logo.png">
+      <img class="logo" :src="require('@/assets/img/home/荷湖LOGO1 拷贝 2.png')">
       <div class="menu">
         <el-menu mode="horizontal">
           <el-menu-item index="1">首页</el-menu-item>
@@ -27,7 +27,6 @@ export default {
   width: 100%;
 }
 .logo {
-  width: 80px;
   padding: 22px 0;
 }
 .menu {

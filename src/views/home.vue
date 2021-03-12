@@ -1,27 +1,59 @@
 <template>
   <div>
-    <el-carousel trigger="click" height="400px">
-      <el-carousel-item v-for="item in 4" :key="item">
-        1
+    <el-carousel trigger="click" height="500px">
+      <el-carousel-item v-for="(item, i) in BannerList" :key="i">
+        <img :src="item" class="Banner">
       </el-carousel-item>
     </el-carousel>
 
     <div class="block">
       <div class="block-content">
         <div class="title f48 M">
-          <i class="el-icon-help" />
+          <div class="icon-img">
+            <img :src="require('@/assets/img/home/Icon--产品中心.png')">
+          </div>
           产品中心
           <span class="f28 L">PRODUCTS</span>
         </div>
         <el-row>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top item-top-bg">
+              扫描光场显微系统SLiM1000
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/产品SLiM1000.png')">
+            </div>
+            <div class="item-bottom item-bottom-bg">
+              <div class="f18 R cWhite item-bottom-content">
+                同时满足生命科学大视野、高分辨、高速、3D成像需求，具备矫正活体组织像差的能力...
+              </div>
+            </div>
           </el-col>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top">
+              大组织透明化成像系统
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/大组织透明....png')">
+            </div>
+            <div class="item-bottom">
+              <div class="f18 R item-bottom-content">
+                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题...
+              </div>
+            </div>
           </el-col>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top">
+              超宽视场3D介观成像系统
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/大组织透明....png')">
+            </div>
+            <div class="item-bottom">
+              <div class="f18 R item-bottom-content">
+                提供多尺度、复杂活体动态观测，从亚细胞、细胞、组织到器官...
+              </div>
+            </div>
           </el-col>
         </el-row>
         <div class="learn-more f18">
@@ -33,19 +65,51 @@
     <div>
       <div class="block-content">
         <div class="title f48 M">
-          <i class="el-icon-help" />
+          <div class="icon-img">
+            <img :src="require('@/assets/img/home/Icon--服务中心.png')">
+          </div>
           服务中心
           <span class="f28 L">SERVICES</span>
         </div>
         <el-row>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top item-top-bg">
+              高通量标准化类器官构建服务
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/产品SLiM1000.png')">
+            </div>
+            <div class="item-bottom item-bottom-bg">
+              <div class="f18 R cWhite item-bottom-content">
+                采用自主研发微流控技术实施标准化、高通量的类器官平行可控培养，减少类器官批次和个体间的差异，助力再生医学、药物研发、体外试药...
+              </div>
+            </div>
           </el-col>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top">
+              组织透明化成像与分析服务
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/大组织透明....png')">
+            </div>
+            <div class="item-bottom">
+              <div class="f18 R item-bottom-content">
+                联合组织清除、免疫荧光标记、光场成像技术，批量探索肿瘤、鼠脑等多种组织器官的3D精细结构，助力复杂生物病理分析...
+              </div>
+            </div>
           </el-col>
           <el-col :span="8" class="item">
-            s
+            <div class="f30 L item-top">
+              高内涵细胞成像与分析服务
+            </div>
+            <div class="item-middle">
+              <img :src="require('@/assets/img/home/大组织透明....png')">
+            </div>
+            <div class="item-bottom">
+              <div class="f18 R item-bottom-content">
+                快速捕获细胞、亚细胞或组织成像，发挥比流式细胞术、ELISA更为强大的多参数分析优势，助力细胞功能研究和药物筛选。
+              </div>
+            </div>
           </el-col>
         </el-row>
         <div class="learn-more f18">
@@ -156,6 +220,16 @@
 <script>
 export default {
   components: {
+  },
+  data() {
+    return {
+      BannerList: [
+        require('@/assets/img/home/Banner1.png'),
+        require('@/assets/img/home/Banner2.png'),
+        require('@/assets/img/home/Banner3.png'),
+        require('@/assets/img/home/Banner4.png')
+      ]
+    }
   }
 }
 </script>
@@ -176,8 +250,37 @@ export default {
 .title {
   padding: 60px 0;
 }
+.icon-img {
+  display: inline-block;
+  height: 60px;
+  vertical-align: middle;
+}
 .item {
   height: 480px;
+}
+.item-top {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.item-top-bg {
+  background: #d4d1e2;
+}
+.item-middle {
+  height: 310px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  width: 480px;
+}
+.item-bottom {
+  height: 100px;
+}
+.item-bottom-bg {
+  background: #8e83bb;
+}
+.item-bottom-content {
+  padding: 10px 30px;
 }
 .learn-more {
   padding: 40px 0;
@@ -187,11 +290,8 @@ export default {
   padding-top: 60px;
   padding-bottom: 100px;
 }
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-.el-carousel__item:nth-child(2n+1) {
-  background-color: #d3dce6;
+.Banner {
+  width: 100%;
+  height: 100%;
 }
 </style>
