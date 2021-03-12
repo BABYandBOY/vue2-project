@@ -23,14 +23,22 @@ export default {
 
 <style scoped>
 .navbar {
-  height: 60px;
+  height: 124px;
   width: 100%;
 }
 .logo {
-  width: 60px;
+  width: 80px;
+  padding: 22px 0;
 }
 .menu {
-  display: inline-block;
   float: right;
+  margin-top: 62px;
+}
+.menu>>>.el-menu.el-menu--horizontal {
+  border-bottom: unset;
+}
+.menu>>>.el-menu-item {
+  font-size: 18px;
+  font-family: AlibabaR;
 }
 </style>

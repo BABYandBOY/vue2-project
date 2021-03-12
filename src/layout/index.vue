@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .main-container {
   position: fixed;
-  top: 60px;
+  top: 124px;
   right: 0;
   left: 0;
   bottom: 0;

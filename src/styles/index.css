@@ -1,3 +1,24 @@
+@font-face {
+  font-family: AlibabaB;
+  src: url("../assets/font/Alibaba-PuHuiTi-Bold.otf");
+}
+@font-face {
+  font-family: AlibabaH;
+  src: url("../assets/font/Alibaba-PuHuiTi-Heavy.otf");
+}
+@font-face {
+  font-family: AlibabaL;
+  src: url("../assets/font/Alibaba-PuHuiTi-Light.otf");
+}
+@font-face {
+  font-family: AlibabaM;
+  src: url("../assets/font/Alibaba-PuHuiTi-Medium.otf");
+}
+@font-face {
+  font-family: AlibabaR;
+  src: url("../assets/font/Alibaba-PuHuiTi-Regular.otf");
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -17,6 +38,40 @@ body {
 }
 
 .block-content {
-  width: 1000px;
+  width: 1440px;
   margin: 0 auto;
+}
+
+.M {
+  font-family: AlibabaM;
+}
+.R {
+  font-family: AlibabaR;
+}
+.L {
+  font-family: AlibabaL;
+}
+.B {
+  font-family: AlibabaB;
+}
+.H {
+  font-family: AlibabaH;
+}
+.f48 {
+  font-size: 48px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f28 {
+  font-size: 28px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f16 {
+  font-size: 16px;
+}
+.cWhite {
+  color: white;
 }
