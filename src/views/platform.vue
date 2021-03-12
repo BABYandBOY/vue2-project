@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="title-bg" :src="require('@/assets/img/product/标题背景框.png')">
+    <img class="title-bg" :src="require('@/assets/img/platform/标题背景框.png')">
     <div class="title-div">
       <span class="f72 B">技术平台</span>
       <span class="f36 L">PLATFORMS</span>
@@ -58,7 +58,7 @@
             <el-row>
               <el-col :span="6">
                 <div class="item-img-144">
-                  <img :src="require('@/assets/img/platform/人类疾病....png')">
+                  <img :src="require('@/assets/img/platform/人类疾病.png')">
                 </div>
               </el-col>
               <el-col :span="18">
