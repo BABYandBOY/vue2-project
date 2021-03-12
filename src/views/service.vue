@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="title-bg" :src="require('@/assets/img/product/标题背景框.png')">
+    <img class="title-bg" :src="require('@/assets/img/service/标题背景框.png')">
     <div class="title-div">
       <span class="f72 B">服务中心</span>
       <span class="f36 L">SERVICES</span>
