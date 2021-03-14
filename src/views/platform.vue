@@ -211,7 +211,7 @@ export default {
   padding: 24px 0;
 }
 .divider {
-  height: 1px;
+  height: 2px;
   background: #8e83bb;
 }
 .title {

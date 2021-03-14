@@ -17,15 +17,17 @@
         </div>
         <el-row>
           <el-col :span="8" class="item">
-            <div class="f30 L item-top item-top-bg">
-              扫描光场显微系统SLiM1000
-            </div>
-            <div class="item-middle">
-              <img :src="require('@/assets/img/home/产品SLiM1000.png')">
-            </div>
-            <div class="item-bottom item-bottom-bg">
-              <div class="f18 R cWhite item-bottom-content">
-                同时满足生命科学大视野、高分辨、高速、3D成像需求，具备矫正活体组织像差的能力...
+            <div @click="routeTo('product-detail')">
+              <div class="f30 L item-top">
+                扫描光场显微系统SLiM1000
+              </div>
+              <div class="item-middle" >
+                <img :src="require('@/assets/img/home/产品SLiM1000.png')">
+              </div>
+              <div class="item-bottom">
+                <div class="f18 R item-bottom-content">
+                  同时满足生命科学大视野、高分辨、高速、3D成像需求，具备矫正活体组织像差的能力...
+                </div>
               </div>
             </div>
           </el-col>
@@ -73,14 +75,14 @@
         </div>
         <el-row>
           <el-col :span="8" class="item">
-            <div class="f30 L item-top item-top-bg">
+            <div class="f30 L item-top">
               高通量标准化类器官构建服务
             </div>
             <div class="item-middle">
               <img :src="require('@/assets/img/home/高通量.png')">
             </div>
-            <div class="item-bottom item-bottom-bg">
-              <div class="f18 R cWhite item-bottom-content">
+            <div class="item-bottom">
+              <div class="f18 R item-bottom-content">
                 采用自主研发微流控技术实施标准化、高通量的类器官平行可控培养，减少类器官批次和个体间的差异，助力再生医学、药物研发、体外试药...
               </div>
             </div>
@@ -185,6 +187,12 @@ export default {
         require('@/assets/img/home/Banner4.png')
       ]
     }
+  },
+  methods: {
+    routeTo(name) {
+      console.log(name)
+      this.$router.push({ name })
+    }
   }
 }
 </script>
@@ -202,10 +210,10 @@ export default {
   height: 480px;
   cursor: pointer;
 }
-.item:hover>.item-top {
+.item:hover>>>.item-top {
   background: #d4d1e2;
 }
-.item:hover>.item-bottom {
+.item:hover>>>.item-bottom {
   background: #8e83bb;
 }
 .item:hover>>>.item-bottom-content {

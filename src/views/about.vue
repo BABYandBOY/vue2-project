@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="title-bg" :src="require('@/assets/img/service/标题背景框.png')">
+    <img class="title-bg" :src="require('@/assets/img/about/标题背景框.png')">
     <div class="title-div">
       <span class="f72 B">关于我们</span>
       <span class="f36 L">ABOUT</span>
@@ -11,10 +11,10 @@
       <div class="block-content">
         <div class="po">
           <div class="po-img">
-            <img :src="require('@/assets/img/service/破折号.png')">
+            <img :src="require('@/assets/img/about/破折号.png')">
           </div>
           <div class="f40 R">
-            我们围绕生命科学、疾病模型、病理研究、药物研发和个性化治疗，提供最具性价比的服务与解决方案。
+            我们致力于通过自主可控技术和跨界融合文化将生命科学研究、药物发现与精准医疗事业推向突破传统模式的边界。
           </div>
         </div>
       </div>
@@ -25,90 +25,102 @@
     <div class="block">
       <div class="block-content">
         <div class="title f40 M">
-          <div class="icon-img">
-            <img :src="require('@/assets/img/service/Icon--服务项目.png')">
-          </div>
-          服务项目
+          <span class="title-span">
+            公司简介
+          </span>
         </div>
-        <el-row class="item">
-          <el-col :span="4">
+        <el-row class="item" :gutter="60">
+          <el-col :span="14">
+            <div class="f18 R item-content">
+              <p>
+                <b>浙江荷湖科技有限公司</b>是由清华大学戴琼海院士领衔，汇聚信息技术、光学和生命科学交叉领域的精英团队共 同创建的高科技公司，目前承担了国家自然科学基金重大专项成果转化工作，自主掌握先进显微 成像、类器官培养、认知计算相关核心技术并达到国际领先水平，致力于开发极具竞争力的创新产品和平台级解决 方案赋能生命科学研究、药物研发与精准医疗。
+              </p>
+              <p>
+                公司研发团队依托<b>清华大学脑与认知科学研究院</b>，二十余年来一直在计算摄像学、生命科学、数字媒体、 人工智能等交叉领域深耕，成果发表于Cell、Sciences、Nature Photonics，Nature Neuroscience, Nature Method等国际顶级期刊，多次获得国家科技进步及发明奖。
+              </p>
+            </div>
+          </el-col>
+          <el-col :span="10">
             <div class="item-img">
-              <img :src="require('@/assets/img/service/心脏.png')" style="width: unset; height: 100%;">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">高通量标准化类器官构建服务</div>
-              <div class="f18 R margin-top">
-                采用自主研发微流控技术实施标准化、高通量的类器官平行可控培养，减少类器官批次和个体间的差异，助力再生医学、药物研发、体外试药。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-        <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/service/大脑.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">组织透明化成像与分析服务</div>
-              <div class="f18 R margin-top">
-                联合组织清除、免疫荧光标记、光场成像技术，批量探索肿瘤、鼠脑等多种组织、器官3D精细结构，助力复杂生物病理分析。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-        <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/service/细胞群.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">高内涵细胞成像与分析服务</div>
-              <div class="f18 R margin-top">
-                快速捕获细胞、亚细胞或组织图像，发挥比流式细胞术、ELISA更为强大的多参数分析优势，助力细胞功能研究和大规模筛选。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-        <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/service/小鼠脑.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">超宽场全脑实时成像与分析服务</div>
-              <div class="f18 R margin-top">
-                快速捕获细胞、亚细胞或组织图像，发挥比流式细胞术、ELISA更为强大的多参数分析优势，助力细胞功能研究和大规模筛选。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
+              <img :src="require('@/assets/img/about/公司简介配图.png')">
             </div>
           </el-col>
         </el-row>
       </div>
     </div>
 
-    <div class="block empty2" />
+    <div class="divider" />
+
+    <div>
+      <div class="block-content">
+        <div class="title f40 M">
+          <span class="title-span">
+            公司文化
+          </span>
+        </div>
+        <div class="f18 R" style="padding: 60px 0 14px 30px;">
+          我们以帮助合作伙伴探索生物奥秘、发掘疾病机理、开发诊疗新策略为己任，以提高人类健康水平为目标而努力奋斗。
+        </div>
+        <el-row class="item" :gutter="134">
+          <el-col :span="8">
+            <div class="item-img">
+              <img :src="require('@/assets/img/about/愿景配图.png')">
+            </div>
+            <div class="cWhite img-text1">
+              <div class="f28 M">愿景</div>
+              <div class="f18 R">成为先进成像、数据与智能技术驱动的全球领先的生物计算平台</div>
+            </div>
+          </el-col>
+          <el-col :span="8">
+            <div class="item-img">
+              <img :src="require('@/assets/img/about/使命配图.png')">
+            </div>
+            <div class="cWhite img-text2">
+              <div class="f28 M">使命</div>
+              <div class="f18 R">围绕生命科学、药物研发和精准医疗构建新型平台级解决方案，为人类健康福祉持续贡献科技动能</div>
+            </div>
+          </el-col>
+          <el-col :span="8">
+            <div class="item-img">
+              <img :src="require('@/assets/img/about/价值观配图.png')">
+            </div>
+            <div class="cWhite img-text1">
+              <div class="f28 M">价值观</div>
+              <div class="f18 R">客户第一，开放创新，团队合作 艰苦奋斗，结果导向，追求卓越</div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+
+    <div class="divider" />
+
+    <div class="block">
+      <div class="block-content">
+        <div class="title f40 M">
+          <span class="title-span">
+            联系我们
+          </span>
+        </div>
+        <el-row class="item" :gutter="60">
+          <el-col :span="12">
+            <div class="f18 R">
+              <p>我们的事业需要生态力量的加持。我们期待与国内外学术机构、医疗机构、制药公司、生物科技公司一起共同努力来加速实现宏愿。</p>
+              <p>联系电话：0571-XXXXXXXX</p>
+              <p>业务合作：bd@hehutek.com；企业微信二维码。</p>
+              <p>销售咨询：sales@hehutek.com；企业微信二维码。</p>
+              <p>人才招聘：hr@hehutek.com</p>
+            </div>
+            <div style="color: #70b855; margin-top: 40px;">了解更多>></div>
+          </el-col>
+          <el-col :span="12">
+            <div class="item-img">
+              <img :src="require('@/assets/img/about/公司简介配图.png')">
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -133,12 +145,15 @@ export default {
   padding: 24px 0;
 }
 .divider {
-  height: 1px;
+  height: 2px;
   background: #70b855;
 }
 .title {
-  padding: 40px 0 0 20px;
-  margin-bottom: 74px;
+  padding: 40px 0 0;
+}
+.title-span {
+  border-left: 8px solid #70b855;
+  padding-left: 30px;
 }
 .icon-img {
   display: inline-block;
@@ -152,14 +167,13 @@ export default {
 }
 .item-img {
   text-align: center;
-  width: 200px;
-  height: 200px;
 }
 .item-img>img {
   width: 100%;
 }
 .item-content {
-  padding-left: 30px;
+  line-height: 40px;
+  text-indent: 30px;
 }
 .item-content-height {
   height: 180px;
@@ -198,5 +212,19 @@ export default {
   left: 50%;
   transform: translate(-50%);
   color: #70B954;
+}
+.img-text1 {
+  position: absolute;
+  width: 250px;
+  text-align: center;
+  padding-left: 64px;
+  bottom: 88px;
+}
+.img-text2 {
+  position: absolute;
+  width: 335px;
+  text-align: center;
+  padding-left: 22px;
+  bottom: 78px;
 }
 </style>

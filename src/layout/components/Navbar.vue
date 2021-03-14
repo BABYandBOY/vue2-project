@@ -23,7 +23,7 @@ export default {
         { name: '/service', label: '服务中心' },
         { name: '/platform', label: '技术平台' },
         { name: '/about', label: '关于我们' },
-        { name: '/invite', label: '招纳贤士' },
+        { name: '/invite', label: '招贤纳士' },
       ]
     }
   }
