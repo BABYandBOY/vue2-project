@@ -1,195 +1,91 @@
 <template>
   <div>
-    <img class="title-bg" :src="require('@/assets/img/product/标题背景框.png')">
-    <div class="title-div">
-      <span class="f72 B">产品中心</span>
-      <span class="f36 L">PRODUCTS</span>
-    </div>
-    <div class="bg" />
-    <div class="block empty1" />
-    <div class="block">
+    <div class="bg">
       <div class="block-content">
-        <div class="po">
-          <div class="po-img">
-            <img :src="require('@/assets/img/product/破折号.png')">
-          </div>
-          <div class="f40 R">
-            我们围绕生命科学中多维度、多尺度的高质量观测需求，提供令人惊叹的先进光学成像仪器，以及配套耗材、试剂。
-          </div>
-        </div>
+        <el-breadcrumb class="bread f18 R" separator-class="el-icon-arrow-right">
+          <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item>产品中心</el-breadcrumb-item>
+          <el-breadcrumb-item >扫描光场显微系统SLiM1000</el-breadcrumb-item>
+        </el-breadcrumb>
       </div>
     </div>
-
-    <div class="divider" />
 
     <div class="block">
       <div class="block-content">
-        <div class="title f40 M">
-          <div class="icon-img">
-            <img :src="require('@/assets/img/product/Icon--仪器.png')">
-          </div>
-          仪器
+        <div class="title f40 M" style="padding-bottom: 74px;">
+          <el-row>
+            <el-col :span="3">
+              <div class="icon-img">
+                <img :src="require('@/assets/img/product/Icon--仪器.png')">
+              </div>
+              仪器
+            </el-col>
+            <el-col :span="21">
+              <div class="split-line"></div>
+            </el-col>
+          </el-row>
         </div>
         <el-row class="item">
-          <el-col :span="4">
+          <el-col :span="10">
             <div class="item-img">
-              <img :src="require('@/assets/img/home/产品SLiM1000.png')">
+              <img :src="require('@/assets/img/product-detail/产品SLiM1000.png')">
             </div>
           </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">扫描光场显微系统SLiM1000</div>
-              <div class="f18 R margin-top">
-                同时满足生命科学大视野、高分辨、高速、3D成像需求，具备矫正活体组织像差的能力。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
+          <el-col :span="14">
+            <div class="f28 M">扫描光场显微系统SLiM1000</div>
+            <el-row>
+              <el-col :span="8">
+                <div class="f18 R" style="margin-top: 30px; line-height: 36px;">
+                  <p>品牌： 荷湖</p>
+                  <p>产地： 中国</p>
+                  <p>型号： SLiM1000</p>
+                  <p>关键词： 三维、活体</p>
+                </div>
+              </el-col>
+              <el-col :span="16">
+                <p class="f18 R" style="margin-top: 30px; line-height: 36px;">联系我们：</p>
+                <img :src="require('@/assets/img/home/荷湖公众号二维码.png')">
+              </el-col>
+            </el-row>
           </el-col>
         </el-row>
-      </div>
-    </div>
-
-    <div class="divider" />
-
-    <div>
-      <div class="block-content">
-        <div class="title f40 M">
-          <div class="icon-img">
-            <img :src="require('@/assets/img/product/Icon--耗材.png')">
+        <div class="item-divider" />
+        <div class="item">
+          <div class="title f28 M">产品简介 >></div>
+          <div class="f18 R item-content">
+            <p style="text-indent: 30px; margin-bottom: 30px;">
+              大组织透明化成像仪器SLiM-TC采用自主研发的动态虚拟光片平铺技术，克服了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光 片照明的方式，利用多个薄的光片分段照明，在不损失成像视野的情况下，获得高分辨率的3D图像。LS18平铺光片显微镜具有高速高分辨率成像、成像模式灵活可调，多色同时成像等优势。 
+            </p>
+            <div>使用场景：免疫反应机理、神经活动研究、活体三维活细胞动态观测等</div>
+            <div>产品状态：2020年Q1完成V1版产品，正式销售</div>
+            <div>产品性能：衍射极限分辨、超快速度、多色、三维体成像、数字像差校正</div>
           </div>
-          耗材
         </div>
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237_5.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">IBAC S1芯片</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
         <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237_3.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">IBAC M1芯片</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。              
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-        <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237_2.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">IBAC M2芯片</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
-    </div>
-
-    <div class="divider" />
-
-    <div class="block">
-      <div class="block-content">
-        <div class="title f40 M">
-          <div class="icon-img">
-            <img :src="require('@/assets/img/product/Icon--试剂.png')">
+        <div class="item">
+          <div class="title f28 M">技术规格 >></div>
+          <div class="f18 R item-content">
+            //
           </div>
-          试剂
         </div>
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237_4.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">人源类器官培养试剂盒</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。
-              </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
         <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237_1.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">动物类器官培养试剂盒</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。
+        <div class="item">
+          <div class="title f28 M">应用案例 >></div>
+          <el-row style="padding: 40px 0 60px;">
+            <el-col :span="12">
+              <div class="item-img" style="height: 420px; margin-left: -50px;">
+                <img :src="require('@/assets/img/product-detail/图层 1247.png')">
               </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
-        <div class="item-divider" />
-        <el-row class="item">
-          <el-col :span="4">
-            <div class="item-img">
-              <img :src="require('@/assets/img/product/图层 1237.png')">
-            </div>
-          </el-col>
-          <el-col :span="18" class="item-content">
-            <div class="item-content-height">
-              <div class="f28 M">人源类器官培养基</div>
-              <div class="f18 R margin-top">
-                针对大组织样本的3D荧光成像，运用创新的扫描光场成像技术，克服传统光场显微镜空间分辨率不足的问题;采用自主研发的动态虚拟光片平铺技术，克服 了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光片照明的方式，利用多个薄的光片分段 照明，在不损失成像视野的情况下，获得高分辨率的3D图像。
+            </el-col>
+            <el-col :span="12">
+              <div class="item-img" style="height: 420px; margin-right: -50px;">
+                <img :src="require('@/assets/img/product-detail/图层 1248.png')">
               </div>
-            </div>
-            <div>
-              <span class="btn">了解更多>></span>
-            </div>
-          </el-col>
-        </el-row>
+            </el-col>
+          </el-row>
+        </div>
       </div>
     </div>
-
-    <div class="block empty2" />
   </div>
 </template>
 
@@ -199,9 +95,22 @@ export default {
 </script>
 
 <style scoped>
+.bread {
+  padding: 10px 0;
+}
+.bread>>>.el-breadcrumb__separator,
+.bread>>>.el-breadcrumb__inner {
+  color: unset;
+}
+.split-line {
+  display: inline-block;
+  border-top: 2px dotted #8e83bb;
+  width: 100%;
+  height: 12px;
+}
 .bg {
   background: #8F84BC;
-  height: 148px;
+  /* height: 148px; */
 }
 .po {
   display: flex;
@@ -218,8 +127,7 @@ export default {
   background: #8e83bb;
 }
 .title {
-  padding: 40px 0 0 20px;
-  margin-bottom: 74px;
+  padding: 40px 20px 0;
 }
 .icon-img {
   display: inline-block;
@@ -228,18 +136,18 @@ export default {
   margin-right: 10px;
 }
 .item {
-  margin-top: 60px;
   padding: 0 20px 60px;
 }
 .item-img {
   text-align: center;
-  width: 100%;
+  height: 280px;
 }
 .item-img>img {
-  width: 100%;
+  height: 100%;
 }
 .item-content {
-  padding-left: 30px;
+  padding: 20px 20px 0;
+  line-height: 30px;
 }
 .item-content-height {
   height: 180px;
@@ -247,7 +155,6 @@ export default {
 .item-divider {
   height: 10px;
   background: #8e83bb;
-  opacity: .3;
 }
 .margin-top {
   margin-top: 20px;
