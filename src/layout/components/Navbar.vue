@@ -31,12 +31,19 @@ export default {
 </script>
 
 <style scoped>
+.menu>>>.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  color: #e02d0f;
+}
+.menu>>>.el-menu--horizontal>.el-menu-item.is-active:hover {
+  color: #303133;
+}
 .navbar {
   height: 124px;
   width: 100%;
 }
 .logo {
   padding: 22px 0;
+  height: 80px;
 }
 .menu {
   float: right;
