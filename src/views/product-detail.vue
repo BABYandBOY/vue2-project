@@ -3,6 +3,7 @@
     <div class="bg">
       <div class="block-content">
         <el-breadcrumb class="bread f18 R" separator-class="el-icon-arrow-right">
+          <!-- <el-breadcrumb-item>您当前的位置</el-breadcrumb-item> -->
           <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
           <el-breadcrumb-item>产品中心</el-breadcrumb-item>
           <el-breadcrumb-item >扫描光场显微系统SLiM1000</el-breadcrumb-item>
@@ -51,7 +52,7 @@
         </el-row>
         <div class="item-divider" />
         <div class="item">
-          <div class="title f28 M">产品简介 >></div>
+          <div class="title f28 M">产品简介 <span class="L">>></span></div>
           <div class="f18 R item-content">
             <p style="text-indent: 30px; margin-bottom: 30px;">
               大组织透明化成像仪器SLiM-TC采用自主研发的动态虚拟光片平铺技术，克服了传统光片显微镜3D空间分辨率、Z轴层析能力和成像视野之间的矛盾，摒弃了原有选择性平面照明显微镜中的单光 片照明的方式，利用多个薄的光片分段照明，在不损失成像视野的情况下，获得高分辨率的3D图像。LS18平铺光片显微镜具有高速高分辨率成像、成像模式灵活可调，多色同时成像等优势。 
@@ -63,14 +64,14 @@
         </div>
         <div class="item-divider" />
         <div class="item">
-          <div class="title f28 M">技术规格 >></div>
+          <div class="title f28 M">技术规格 <span class="L">>></span></div>
           <div class="f18 R item-content">
             //
           </div>
         </div>
         <div class="item-divider" />
         <div class="item">
-          <div class="title f28 M">应用案例 >></div>
+          <div class="title f28 M">应用案例 <span class="L">>></span></div>
           <el-row style="padding: 40px 0 60px;">
             <el-col :span="12">
               <div class="item-img" style="height: 420px; margin-left: -50px;">

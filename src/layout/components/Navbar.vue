@@ -34,8 +34,13 @@ export default {
 .menu>>>.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
   color: #e02d0f;
 }
+.menu>>>.el-menu--horizontal>.el-menu-item.is-active {
+  color: #e02d0f;
+  font-weight: bold;
+  border-bottom-color: #e02d0f;
+}
 .menu>>>.el-menu--horizontal>.el-menu-item.is-active:hover {
-  color: #303133;
+  color: #e02d0f;
 }
 .navbar {
   height: 124px;
@@ -54,6 +59,6 @@ export default {
 }
 .menu>>>.el-menu-item {
   font-size: 18px;
-  font-family: AlibabaR;
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 }
 </style>

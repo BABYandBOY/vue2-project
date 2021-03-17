@@ -22,7 +22,7 @@
 
     <div class="divider" />
 
-    <div class="block">
+    <div class="block shadow">
       <div class="block-content">
         <div class="title f40 M">
           <span class="title-span">
@@ -49,9 +49,7 @@
       </div>
     </div>
 
-    <div class="divider" />
-
-    <div>
+    <div class="shadow">
       <div class="block-content">
         <div class="title f40 M">
           <span class="title-span">
@@ -93,9 +91,7 @@
       </div>
     </div>
 
-    <div class="divider" />
-
-    <div class="block">
+    <div class="block" style="margin-top: 3px;">
       <div class="block-content">
         <div class="title f40 M">
           <span class="title-span">
@@ -215,7 +211,7 @@ export default {
 }
 .img-text1 {
   position: absolute;
-  width: 250px;
+  width: 254px;
   text-align: center;
   padding-left: 64px;
   bottom: 88px;

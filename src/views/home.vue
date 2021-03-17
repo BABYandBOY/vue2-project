@@ -259,12 +259,12 @@ export default {
 .learn-more-hover {
   transition: all .3s;
   border: 2px solid;
-  padding: 8px 20px;
+  padding: 6px 20px;
   border-radius: 4px;
 }
 .learn-more-hover:hover {
-  color: #f95671;
-  border-color: #f95671;
+  color: #e02d0f;
+  border-color: #e02d0f;
   cursor: pointer;
 }
 .Banner {

@@ -33,7 +33,7 @@ body {
 
 #app {
   height: 100%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -45,19 +45,29 @@ body {
 }
 
 .M {
-  font-family: AlibabaM;
+  /* font-family: AlibabaM; */
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  font-weight: bold;
 }
 .R {
-  font-family: AlibabaR;
+  /* font-family: AlibabaR; */
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  font-weight: normal;
 }
 .L {
-  font-family: AlibabaL;
+  /* font-family: AlibabaL; */
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  font-weight: normal;
 }
 .B {
-  font-family: AlibabaB;
+  /* font-family: AlibabaB; */
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  font-weight: bold;
 }
 .H {
-  font-family: AlibabaH;
+  /* font-family: AlibabaH; */
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+  font-weight: bold;
 }
 .f72 {
   font-size: 72px;
@@ -97,4 +107,7 @@ body {
 }
 .block {
   background: #F2F2F2;
+}
+.shadow {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 }

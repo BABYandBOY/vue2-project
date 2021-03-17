@@ -22,7 +22,7 @@
 
     <div class="divider" />
 
-    <div class="block">
+    <div class="block shadow">
       <div class="block-content">
         <div class="title f40 M">
           <div class="icon-img">
@@ -43,9 +43,7 @@
       </div>
     </div>
 
-    <div class="divider" />
-
-    <div>
+    <div class="shadow">
       <div class="block-content">
         <div class="title f40 M">
           <div class="icon-img">
@@ -137,9 +135,7 @@
       </div>
     </div>
 
-    <div class="divider" />
-
-    <div class="block">
+    <div class="block" style="margin-top: 3px;">
       <div class="block-content">
         <div class="title f40 M">
           <div class="icon-img">

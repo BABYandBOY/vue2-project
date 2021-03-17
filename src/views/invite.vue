@@ -5,12 +5,12 @@
         <img :src="item" class="Banner">
       </el-carousel-item>
     </el-carousel>
-    <div class="block-content f18 R" style="text-indent: 30px; padding: 74px 0 60px;">
+    <div class="block-content f18 R" style="text-indent: 30px; padding: 74px 0 60px; line-height: 30px;">
       我们正在构建一支高度跨学科融合的团队，包括生命科学、药物研发、数据科学、人工智能、软件开发、光学设计专家。我们希望通过努力，能让生命科学家从繁重实验中解脱出来专注于探索生物系统的核心问题与奥秘，让药物研发效率、成功率更高以及成本更低，让医生能为患者提供更优质药物和更精准的疗法。
     </div>
     <div class="divider" />
     <div class="block-content">
-      <div class="title f28 M">我们提供 >></div>
+      <div class="title f28 M">我们提供 <span class="L">>></span></div>
       <div class="item" style="position: relative;">
         <div class="item-img">
           <img :src="require('@/assets/img/invite/装饰框.png')">
@@ -49,7 +49,7 @@
       </div>
       <div class="item-divider" style="opacity: 1;" />
       <div>
-        <div class="title f28 M" style="padding-left: 20px;">开放职位 >></div>
+        <div class="title f28 M" style="padding-left: 20px;">开放职位 <span class="L">>></span></div>
         <div class="item" style="padding-bottom: 32px;">
           <div class="f24 M title-color">细胞培养工程师</div>
           <div class="f18 R" style="margin-top: 10px;">杭州总部 • 全职</div>
